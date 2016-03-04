@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('search-results', {path: 'search-results/:searchParams'});
+  this.route('favorites');
 });
 
 export default Router;
