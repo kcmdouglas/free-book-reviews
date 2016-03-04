@@ -1,3 +1,27 @@
 .search-bar__input {
   width: 400px !important;
 }
+
+.result-tile {
+  height: 400px;
+  width: 525px;
+  margin: 5px;
+  .result-tile__image {
+    margin-top: 10px;
+    margin-left: -20px;
+  }
+  .result-tile__buttons {
+    float: right;
+    .result-tile__buttons--styled {
+      font-size: 20px !important;
+      padding: 2px !important;
+      position: relative;
+      border: 0px;
+    }
+  }
+}
+
+.tile--bordered {
+  border: .5px black;
+  border-style: dotted;
+}

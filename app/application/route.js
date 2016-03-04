@@ -5,8 +5,6 @@ export default Ember.Route.extend({
 
   actions: {
     search(params) {
-      console.log("Made it to Application route");
-      console.log(params.searchParams);
       this.transitionTo('search-results', params.searchParams);
     }
   }
