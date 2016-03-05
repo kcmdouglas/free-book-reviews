@@ -9,4 +9,5 @@ export default DS.Model.extend({
   userRating: DS.attr(),
   inProgress: DS.attr(),
   finished: DS.attr(),
+  dateAdded: DS.attr()
 });

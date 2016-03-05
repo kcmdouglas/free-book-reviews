@@ -6,12 +6,13 @@ export default Ember.Component.extend({
       var params = {
         title: result.volumeInfo.title,
         authors: result.volumeInfo.authors,
-        googleRating: result.volumeInfo.averageRating,
+        googleRating: result.volumeInfo.averageRating || '',
         eBookLink: result.accessInfo.epub.downloadLink || '',
         pdfLink: result.accessInfo.pdf.downloadLink || '',
         userRating: '',
         inProgress: false,
-        finished: false
+        finished: false,
+        dateAdded: Date.now()
       }
       this.sendAction("addBook", params);
     }

@@ -19,7 +19,7 @@ export default Ember.Route.extend({
 
   actions: {
     addBook(params) {
-      var newFavoriteBook = this.store.createRecord('favorite-book', params);
+      var newFavoriteBook = this.store.createRecord('book', params);
       newFavoriteBook.save();
     }
   }

@@ -25,3 +25,14 @@
   border: .5px black;
   border-style: dotted;
 }
+
+.glyph--large {
+  font-size: 20px;
+}
+
+.border--L {
+  border-left: .5px black dotted;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: .5px black dotted;
+}
