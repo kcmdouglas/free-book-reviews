@@ -1,3 +1,40 @@
-{{#each downloadList.downloads as |book|}}
-  <h1>{{book.title}}</h1>
-{{/each}}
+<h2>Here are the titles on your download list thus far:</h2>
+
+<ul>
+  {{#each downloadList.downloads as |book|}}
+    <h4>{{book.title}}</h4>
+    {{#if book.eBookLink}}
+    <li>eBook Link: {{book.eBookLink}}</li>
+    {{/if}}
+    {{#if book.pdfLink}}
+    <li>PDF Link: {{book.pdfLink}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  All done? Get your download links!
+</button>
+
+
+<div class="modal fade" id="myModal" tabindex="0" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Here are your links:</h4>
+      </div>
+      <div class="modal-body">
+        <!-- {{#each downloadList.downloads as |book|}}
+        <h4>{{book.title}}</h4>
+        {{#if book.eBookLink}}
+        <li>eBook Link: {{book.eBookLink}}</li>
+        {{/if}}
+        {{#if book.pdfLink}}
+        <li>PDF Link: {{book.pdfLink}}</li>
+        {{/if}}
+        {{/each}} -->
+      <!-- </div>
+    </div>
+  </div>
+</div> --> 
